@@ -19,3 +19,7 @@
 | 11:54 | Draft of the summary cell with the key findings                     | Checked every number against my notebook outputs             |
 | 11:58 | Why and how to restart the kernel and run all cells                 | Ran it: 28 cells, no errors, same final shape (48790, 16)   |
 | 12:05 | Draft of reports/task1.md from the template, filled with the numbers from my notebook | Checked every number against the notebook; rewrote parts of the summary and limitations in my own words |
+| 12:25 | Git commands to sync my fork with upstream (fetch was missing)      | Ran them myself; used merge, not rebase, to keep pushed history |
+| 12:35 | Summary of Task 2 requirements and objectives                       | Used as a checklist                                          |
+| 12:40 | Code to move the notebook cleaning into a reusable function         | Same steps and order as my notebook; checked with an assert (48790, 16) |
+| 12:45 | Comparison of Python app frameworks and code for a minimal Streamlit app | Chose Streamlit myself: pure Python, reuses my pandas code, easy to containerise |
