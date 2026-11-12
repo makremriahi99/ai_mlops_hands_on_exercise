@@ -26,3 +26,4 @@
 | 12:55 | Code for sidebar filters (sex, age) and summary metrics in Streamlit | Checked that the metrics match my notebook (48790 people, 23.9%, 10.9% for women) |
 | 14:05 | Code for an interactive bar chart of income rate by a selectable column | Checked that it reacts to the filters; noticed small groups give unstable rates |
 | 14:15 | Explanation of Dockerfile structure: slim and pinned base image, layer caching, non-root user, CMD exec form | Wrote the Dockerfile myself block by block; verified build, layer cache and that the container runs as appuser |
+| 14:40 | Explanation of Compose fields: ports, environment variable, read-only volume | Wrote compose.yaml myself; fixed the YAML indentation; checked the app in the container shows 48,790 rows and 23.9% |
