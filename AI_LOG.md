@@ -13,3 +13,5 @@
 | 10:45 | Code for the age distribution plot by income                          | Read the plot myself: high earners older (median 43 vs 34)   |
 | 11:00 | Code for the income rate by education bar chart                       | Used; wrote my own conclusion on the HS-grad to Bachelors jump |
 | 11:15 | Code for the income rate by marital status and sex chart              | Used; found myself that the sex gap comes from marital composition |
+| 11:30 | Code for the correlation heatmap and how to read correlation values | Interpreted it myself: education_num strongest (0.33); no column decides income alone; marital status not visible because it is not numeric |
+| 11:40 | Code for the capital gain plot and meaning of top-coding | Reasoned myself that 99999 means "at least 99,999", that it alone pushes income above 50K (leakage risk), and decided to keep and flag the 244 rows |
