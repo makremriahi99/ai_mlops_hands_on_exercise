@@ -23,3 +23,4 @@
 | 12:35 | Summary of Task 2 requirements and objectives                       | Used as a checklist                                          |
 | 12:40 | Code to move the notebook cleaning into a reusable function         | Same steps and order as my notebook; checked with an assert (48790, 16) |
 | 12:45 | Comparison of Python app frameworks and code for a minimal Streamlit app | Chose Streamlit myself: pure Python, reuses my pandas code, easy to containerise |
+| 12:55 | Code for sidebar filters (sex, age) and summary metrics in Streamlit | Checked that the metrics match my notebook (48790 people, 23.9%, 10.9% for women) |

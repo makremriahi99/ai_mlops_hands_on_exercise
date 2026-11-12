@@ -15,5 +15,20 @@ def get_data():
 
 st.title("Adult Census Income explorer")
 df = get_data()
-st.write(f"{len(df)} people in the cleaned dataset")
-st.dataframe(df.head(100))
+
+st.sidebar.header("Filters")
+all_sexes = sorted(df["sex"].unique())
+sexes = st.sidebar.multiselect("Sex", all_sexes, default=all_sexes)
+age_min, age_max = st.sidebar.slider("Age", 17, 90, (17, 90))
+
+filtered = df[df["sex"].isin(sexes) & df["age"].between(age_min, age_max)]
+
+if filtered.empty:
+    st.warning("No people match these filters.")
+    st.stop()
+
+col1, col2 = st.columns(2)
+col1.metric("People", f"{len(filtered):,}")
+col2.metric("Share earning >50K", f"{filtered['income_gt50k'].mean() * 100:.1f}%")
+
+st.dataframe(filtered.head(100))
