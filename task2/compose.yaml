@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: census-app
+    ports:
+      - "8501:8501"
+    environment:
+      DATA_PATH: /data/census_income.csv
+    volumes:
+      - ../datasets/census_income.csv:/data/census_income.csv:ro
