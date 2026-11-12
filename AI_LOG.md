@@ -24,3 +24,4 @@
 | 12:40 | Code to move the notebook cleaning into a reusable function         | Same steps and order as my notebook; checked with an assert (48790, 16) |
 | 12:45 | Comparison of Python app frameworks and code for a minimal Streamlit app | Chose Streamlit myself: pure Python, reuses my pandas code, easy to containerise |
 | 12:55 | Code for sidebar filters (sex, age) and summary metrics in Streamlit | Checked that the metrics match my notebook (48790 people, 23.9%, 10.9% for women) |
+| 14:05 | Code for an interactive bar chart of income rate by a selectable column | Checked that it reacts to the filters; noticed small groups give unstable rates |

@@ -32,3 +32,9 @@ col1.metric("People", f"{len(filtered):,}")
 col2.metric("Share earning >50K", f"{filtered['income_gt50k'].mean() * 100:.1f}%")
 
 st.dataframe(filtered.head(100))
+st.subheader("Share earning >50K by category")
+cat_cols = ["education", "marital_status", "occupation", "relationship", "race", "workclass", "sex"]
+group_col = st.selectbox("Group by", cat_cols)
+
+rate = filtered.groupby(group_col)["income_gt50k"].mean() * 100
+st.bar_chart(rate, horizontal=True, x_label="% earning >50K", y_label=group_col)
