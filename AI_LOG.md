@@ -10,3 +10,6 @@
 | 10:10 | Code to clean the income labels and build a 0/1 target               | Used after checking the 4 labels; verified the counts        |
 | 10:20 | Code to detect "?" values and compare target rate by missingness     | Used; decided myself to keep rows as NaN                     |
 | 10:35 | Code to remove duplicates, rename columns and drop fnlwgt            | Used; chose myself which column to drop and why              |
+| 10:45 | Code for the age distribution plot by income                          | Read the plot myself: high earners older (median 43 vs 34)   |
+| 11:00 | Code for the income rate by education bar chart                       | Used; wrote my own conclusion on the HS-grad to Bachelors jump |
+| 11:15 | Code for the income rate by marital status and sex chart              | Used; found myself that the sex gap comes from marital composition |
